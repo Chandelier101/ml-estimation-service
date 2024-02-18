@@ -82,13 +82,13 @@ curl -X 'POST' \
   ...
 }'
 ```
-dataset_size - count of samples in the training set
-parameters - total parameters of the model
-batch_size - total samples in a batch of images for training/inference
-image_size - height, width of the image
-threading - for continuous/fixed interval monitoring
-application_type - <training/inference>
-task_type - <detection/instance>
+- **dataset_size** - count of samples in the training set
+- **parameters** - total parameters of the model
+- **batch_size** - total samples in a batch of images for training/inference
+- **image_size** - height, width of the image
+- **threading** - for continuous/fixed interval monitoring
+- **application_type** - <training/inference>
+- **task_type** - <detection/instance>
 
 ### Testing
 The project includes unit tests for API and service layers. To run tests:
