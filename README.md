@@ -35,6 +35,37 @@ Every API call to the inference time estimator returns the following:
 "Batch of {batch_size} Inference Time"}
 ```
 
+## Project Structure
+```ml-estimation-service/
+├── api/
+│   ├── main.py
+│   ├── dependencies.py
+│   └── routers/
+│       ├── resource_estimation.py
+│       ├── training_time_estimation.py
+│       └── inference_time_estimation.py
+├── models/
+│   ├── estimation_models.py
+│   └── pytorch_models.py
+├── services/
+│   ├── resource_estimator.py
+│   ├── training_estimator.py
+│   └── inference_estimator.py
+├── tests/
+│   └── test_api/
+│   └── test_services/
+├── utils/
+│   ├── data_collector.py
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+├── .github/workflows/
+│   ├── python-app.yml
+│   └── docker-image.yml
+├── README.md
+└── .pylintrc
+```
+
 ## API Endpoints
 - /api/v1/estimate-resource: Estimates resources for training or inference.
 - /api/v1/estimate-training-time: Estimates the training time for a given model.
@@ -60,9 +91,9 @@ uvicorn api.main:app --reload
 ```
 ### Docker Setup
 1. Build the Docker image:
-
+```docker-compose```
 2. Run using Docker Compose:
-
+```docker-compose up -d```
 
 ### Example Usage via curl
 ```
