@@ -1,0 +1,17 @@
+[MASTER]
+load-plugins=pylint.extensions.mccabe
+
+[MESSAGES CONTROL]
+disable=
+    C0114, # missing-module-docstring
+    C0115, # missing-class-docstring
+    C0116, # missing-function-docstring
+    R0903, # too-few-public-methods
+    W0511, # TODO
+    E1136  # unsubscriptable-object
+
+[FORMAT]
+max-line-length=200
+
+[DESIGN]
+max-args=5

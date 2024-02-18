@@ -1,0 +1,15 @@
+version: '3'
+services:
+  ml_estimation_service:
+    build: .
+    ports:
+     - "8000:80"
+    volumes:
+     - .:/app
+    environment:
+     - NAME=ML_Estimation_Service
+    deploy:
+      resources:
+        limits:
+          cpus: '10.0'
+          memory: 12G

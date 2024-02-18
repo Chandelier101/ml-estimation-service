@@ -1,0 +1,3 @@
+from .resource_estimation import router as resource_estimation_router
+from .training_time_estimation import router as training_time_estimation_router
+from .inference_time_estimation import router as inference_time_estimation_router
