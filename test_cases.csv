@@ -1,0 +1,3 @@
+task_type,architecture,parameters,dataset_size,batch_size,image_size,application_type,epochs,threading,num_samples
+detection,fasterrcnn_resnet50_fpn,25000000,1000,2,"(256, 256)",training,10,FALSE,1
+instance,maskrcnn_resnet50_fpn_v2,25000000,1000,2,"(256, 256)",inference,10,TRUE,2

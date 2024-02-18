@@ -1,0 +1,13 @@
+python-Levenshtein
+fuzzywuzzy
+pytest
+requests
+torch
+torchvision
+gputil
+psutil
+fastapi
+pydantic
+pytest
+uvicorn
+httpx
